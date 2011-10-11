@@ -8,7 +8,7 @@ ArrayList entrys;
 
 void setup() {
   size(screenWidth, screenHeight, OPENGL);
-  dataController = new Controller(this, "10.207.240.133", 8000);
+  dataController = new Controller(this, true);
   dataController.getData();
   ArrayList tags = dataController.getTags();
   ArrayList tagsAmount = new ArrayList();
